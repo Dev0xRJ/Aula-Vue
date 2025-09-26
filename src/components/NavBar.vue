@@ -2,16 +2,52 @@
 export default { name: 'NavBar' }
 </script>
 
+
 <template>
-  <nav>
-    <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/about">Sobre</router-link></li>
-      <li><router-link to="/projects">Projetos</router-link></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portifólio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about"
+              >Sobre</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#curriculum">Currículo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
 
-<style scoped>
+<script>
+export default {
+  name: 'NavBar',
+}
+</script>
 
+<style scoped>
 </style>
