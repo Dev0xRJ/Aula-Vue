@@ -1,13 +1,7 @@
-<script>
-export default { name: 'NavBar' }
-
-</script>
-
-
 <template>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Portifólio</a>
+      <a class="navbar-brand" href="#"></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -21,22 +15,18 @@ export default { name: 'NavBar' }
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+    
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about"
-              >Sobre</a
-            >
+            <router-link class="nav-link" to="/about">Sobre</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projetos</a>
+            <router-link class="nav-link" to="/projects">Acervo de conhecimentos</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
+            <router-link class="nav-link" to="/contact">Contato</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#curriculum">Currículo</a>
+            <router-link class="nav-link" to="/curriculum">Histórico profissional</router-link>
           </li>
         </ul>
       </div>

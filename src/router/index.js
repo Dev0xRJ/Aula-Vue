@@ -1,46 +1,52 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Projects from '../components/Projects.vue'
 import Contact from '../components/Contact.vue'
 import Curriculum from '../components/Curriculum.vue'
-import Blog from '../components/Blog.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home,
+    meta: { title: 'In?cio | Portf?lio' },
   },
   {
     path: '/about',
     name: 'About',
     component: About,
+    meta: { title: 'Sobre | Portf?lio' },
   },
   {
     path: '/projects',
     name: 'Projects',
     component: Projects,
+    meta: { title: 'Projetos | Portf?lio' },
   },
   {
     path: '/contact',
     name: 'Contact',
     component: Contact,
+    meta: { title: 'Contato | Portf?lio' },
   },
   {
     path: '/curriculum',
     name: 'Curriculum',
     component: Curriculum,
-  },
-  {
-    path: '/blog',
-    name: 'Blog',
-    component: Blog,
+    meta: { title: 'Curr?culo | Portf?lio' },
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.afterEach((to) => {
+  if (to.meta && to.meta.title) {
+    document.title = to.meta.title
+  }
 })
 
 export default router
