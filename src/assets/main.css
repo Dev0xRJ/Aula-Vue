@@ -13,6 +13,14 @@
     --bg-dark: #0a0a0a;
     --bg-light: #1a1a1a;
     --transition: all 0.3s ease;
+
+    /* Bootstrap theme variables */
+    --bs-primary: var(--primary-color);
+    --bs-body-bg: var(--bg-dark);
+    --bs-body-color: var(--text-color);
+    --bs-link-color: var(--primary-color);
+    --bs-link-hover-color: #00cc7a;
+    --bs-border-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -21,6 +29,115 @@ body {
     color: var(--text-color);
     background-color: var(--bg-dark);
     overflow-x: hidden;
+}
+
+/* Tema global consistente em todas as p?ginas */
+section, main, .container, .page-section {
+    background: transparent;
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+/* Utilit?rios de tema para p?ginas */
+.page-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-light) 100%);
+    padding: 4rem 0;
+}
+
+.page-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background: var(--bg-light);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.skill-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0, 255, 153, 0.08);
+}
+
+.skill-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Bootstrap component theming */
+.card {
+    background: var(--bg-light);
+    color: var(--text-color);
+    border-color: var(--bs-border-color);
+}
+
+.card .card-header,
+.card .card-footer {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: var(--bs-border-color);
+}
+
+.alert-primary {
+    background: rgba(0, 255, 153, 0.12);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: var(--bg-dark);
 }
 
 .container {
@@ -42,6 +159,56 @@ body {
 
 .navbar {
     padding: 1rem 0;
+}
+
+.navbar-compact {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.navbar-compact .nav-link {
+    padding: 0.25rem 0.5rem;
+}
+
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-dark-custom {
+    background-color: var(--bg-dark) !important;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar.bg-dark-custom .nav-link {
+    color: var(--text-color) !important;
+}
+
+.navbar.bg-dark-custom .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar.bg-dark-custom .navbar-brand,
+.navbar.bg-dark-custom .navbar-toggler {
+    color: var(--text-color) !important;
+}
+
+.navbar.bg-primary-custom .nav-link {
+    color: var(--bg-dark) !important;
+    font-weight: 600;
+}
+
+.navbar.bg-primary-custom .nav-link:hover {
+    color: #0a0a0a !important;
+    opacity: 0.85;
+}
+
+.navbar.bg-primary-custom .navbar-brand,
+.navbar.bg-primary-custom .navbar-toggler {
+    color: var(--bg-dark) !important;
+}
+
+.navbar.bg-primary-custom .navbar-toggler-icon {
+    filter: invert(1);
 }
 
 .nav-container {
@@ -146,7 +313,7 @@ body {
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, var(--primary-color), #ffffff);
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

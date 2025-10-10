@@ -10,31 +10,31 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    meta: { title: 'In?cio | Portf?lio' },
+    meta: { title: 'Início | Portfólio' },
   },
   {
     path: '/about',
     name: 'About',
     component: About,
-    meta: { title: 'Sobre | Portf?lio' },
+    meta: { title: 'Sobre | Portfólio' },
   },
   {
     path: '/projects',
     name: 'Projects',
     component: Projects,
-    meta: { title: 'Projetos | Portf?lio' },
+    meta: { title: 'Projetos | Portfólio' },
   },
   {
     path: '/contact',
     name: 'Contact',
     component: Contact,
-    meta: { title: 'Contato | Portf?lio' },
+    meta: { title: 'Contato | Portfólio' },
   },
   {
     path: '/curriculum',
     name: 'Curriculum',
     component: Curriculum,
-    meta: { title: 'Curr?culo | Portf?lio' },
+    meta: { title: 'Currículo | Portfólio' },
   },
 ]
 

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom navbar-compact fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"></a>
       <button
@@ -14,20 +14,24 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <router-link class="nav-link" to="/">Início</router-link>
+      </li>
     
           <li class="nav-item">
             <router-link class="nav-link" to="/about">Sobre</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/projects">Acervo de conhecimentos</router-link>
+            <router-link class="nav-link" to="/projects">Habilidades Técnicas
+            </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contato</router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/curriculum">Histórico profissional</router-link>
-          </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/curriculum">Histórico profissional</router-link>
+        </li>
         </ul>
       </div>
     </div>

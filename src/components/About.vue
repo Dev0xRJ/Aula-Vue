@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h1>Sobre</h1>
+  <div class="page-wrapper">
+    <div class="container">
+    <h1 class="page-title">Sobre</h1>
+    <p class="page-subtitle">Quem sou, experi?ncia e tecnologias favoritas.</p>
     <p>Aqui voc? pode adicionar uma breve descri??o sobre voc?.</p>
     <p>
       Sou <strong>Raimundo Junior</strong>, desenvolvedor frontend com experi?ncia em Vue.js, React e Angular.
@@ -25,6 +27,7 @@
         </a>
       </li>
     </ul>
+    </div>
   </div>
 </template>
 
