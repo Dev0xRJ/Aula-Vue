@@ -3,8 +3,6 @@ import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Projects from '../components/Projects.vue'
 import Contact from '../components/Contact.vue'
-import Curriculum from '../components/Curriculum.vue'
-
 const routes = [
   {
     path: '/',
@@ -29,13 +27,7 @@ const routes = [
     name: 'Contact',
     component: Contact,
     meta: { title: 'Contato | Portfólio' },
-  },
-  {
-    path: '/curriculum',
-    name: 'Curriculum',
-    component: Curriculum,
-    meta: { title: 'Currículo | Portfólio' },
-  },
+  }
 ]
 
 const router = createRouter({

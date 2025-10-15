@@ -29,9 +29,6 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contato</router-link>
           </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/curriculum">Histórico profissional</router-link>
-        </li>
         </ul>
       </div>
     </div>
