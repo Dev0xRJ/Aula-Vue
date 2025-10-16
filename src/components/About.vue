@@ -65,7 +65,7 @@ export default {
   name: 'About',
   data() {
     return {
-      names: ['Customer Success Technician,', 'Developer', 'Technical Support Specialist'],
+      names: ['Customer Success Technician', 'Developer', 'Technical Support Specialist'],
       currentIndex: 0,
       displayText: 'Customer Success Technician,',
       lastUpdated: 'Outubro 2025',
