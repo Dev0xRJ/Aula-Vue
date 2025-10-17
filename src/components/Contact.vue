@@ -396,20 +396,171 @@ ul li a i {
   font-size: 1.5rem;
 }
 
-/* Responsivo */
+/* Responsividade Completa */
+@media (max-width: 992px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-form-section {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
   .contact-form-section {
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+  }
+  
+  .contact-form-section h2 {
+    font-size: 1.4rem;
+    text-align: center;
   }
   
   .form-buttons {
     flex-direction: column;
+    gap: 1rem;
   }
   
   .btn {
     width: 100%;
     justify-content: center;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .direct-contact {
+    padding: 1rem;
+  }
+  
+  .direct-contact h2 {
+    font-size: 1.3rem;
+  }
+  
+  ul {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  ul li a i {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-wrapper {
+    padding: 1.5rem 0;
+  }
+  
+  .page-title {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form-section {
+    padding: 0.75rem;
+    margin: 1rem 0;
+  }
+  
+  .contact-form-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .form-control,
+  textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  
+  .btn {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .direct-contact {
+    padding: 0.75rem;
+  }
+  
+  .direct-contact a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .page-title {
+    font-size: 1.2rem;
+  }
+  
+  .contact-form-section {
+    padding: 0.5rem;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+  }
+  
+  .form-control,
+  textarea {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  .btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  ul {
+    gap: 1rem;
+  }
+  
+  ul li a i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .page-title {
+    font-size: 1.1rem;
+  }
+  
+  .contact-form-section h2,
+  .direct-contact h2 {
+    font-size: 1.1rem;
+  }
+  
+  .form-control,
+  textarea {
+    font-size: 0.8rem;
+  }
+  
+  .btn {
+    font-size: 0.75rem;
   }
 }
 </style>
