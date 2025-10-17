@@ -4,12 +4,9 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  root: './',
-  base: '/Aula-Vue-Portifolio/',
+  base: './',
   build: {
-    rollupOptions: {
-      input: resolve(__dirname, 'index.html')
-    }
+    outDir: 'dist'
   },
   resolve: {
     alias: {
