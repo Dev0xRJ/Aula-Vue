@@ -5,6 +5,7 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [vue()],
   root: './',
+  base: '/Aula-Vue-Portifolio/',
   build: {
     rollupOptions: {
       input: resolve(__dirname, 'index.html')
